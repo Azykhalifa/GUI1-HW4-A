@@ -1,0 +1,165 @@
+/*
+
+NAME: Mohmmadazhar Khalifa
+File Description: This is the css file which styles the content that is shown
+on the webpage
+
+*/
+
+
+/* Main body style*/
+html body {
+  color: #2d2937;
+  font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Main heading*/
+h2 {
+    color: blue;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+}
+/* form*/
+#form{
+ border: 2px solid #ccc;
+ width: 35%;
+ height:40%;
+ margin-left: 5%;
+}
+.form-group {
+  margin-left: 10%;
+
+}
+.form-group input{
+  width: 20%;
+}
+/* button*/
+.btn-default {
+  background-color: #aa92fb !important;
+  color: #2d2937 !important;
+  margin-left: 10%;
+}
+.red {
+  color: #dc3545;
+}
+
+.main-table {
+  overflow-x: scroll;
+}
+
+.table #td {
+  padding: 0.5rem !important;
+}
+
+#row #topRow td,
+#row td:nth-child(1) {
+  background-color: #2d2937 !important;
+  color: #aa92fb !important;
+  text-align: center;
+  border: 1px solid #aa92fb;
+  font-weight: bold;
+  width: 5px;
+}
+/* alternates the color in table for readibilty */
+#row td {
+  background-color: #ddd5f9;
+  color: #40537a;
+  text-align: center;
+  width: 5px;
+  height: 5px;
+
+}
+
+#row tr:nth-child(2n) td:nth-of-type(2n) {
+  background-color: #f9f7ff;
+  text-align: center;
+
+}
+
+#row tr:nth-child(2n + 1) td:nth-of-type(2n + 1) {
+  background-color: #f9f7ff;
+  text-align: center;
+}
+.row {
+
+    margin-right/*: -15px;
+    margin-left: -15px;*/
+
+}
+
+
+#row1 #topRow1 td,
+#row1 td:nth-child(1) {
+  background-color: #2d2937 !important;
+  color: #aa92fb !important;
+  text-align: center;
+  border: 1px solid #aa92fb;
+  font-weight: bold;
+  width: 5px;
+}
+/* alternates the color in table for readibilty */
+#row1 td {
+  background-color: #ddd5f9;
+  color: #40537a;
+  text-align: center;
+  width: 5px;
+  height: 5px;
+
+}
+
+#row1 tr:nth-child(2n) td:nth-of-type(2n) {
+  background-color: #f9f7ff;
+  text-align: center;
+
+}
+
+#row1 tr:nth-child(2n + 1) td:nth-of-type(2n + 1) {
+  background-color: #f9f7ff;
+  text-align: center;
+}
+.row1 {
+
+    margin-right/*: -15px;
+    margin-left: -15px;*/
+
+}
+.savedTables {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.savedTables button {
+  background-color: inherit;
+  float: left;
+
+}
+
+/* Change background color of buttons on hover */
+.savedTables button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.savedTables button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.red-text{
+  color:red; 
+  display: none;
+}
+.mult-table{
+  text-align: center;
+}

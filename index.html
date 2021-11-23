@@ -1,0 +1,89 @@
+<!--
+
+NAME: Mohmmadazhar Khalifa
+DATE: 11/23/2021
+
+Homework 4 Part A
+
+DESCRIPTION: This assignment was to creat a nultiplication table using js
+while also using knowledge from html to get it working using the submit button
+and cs to style the page
+File Description:   To implememt the js and css inorder to form the table
+                    To use jquery plugins for error validations
+
+
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Multiplication Table Generator</title>
+            <!-- Stylesheet -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    </head>
+    <body>
+        <h2 class = "mult-table">MULTIPLICATION TABLE</h2>
+            <!-- form starts -->
+            <div class="row" id= "upperDiv">
+                  
+              <form class="mt-3 needs-validation" id="form">
+                <div class="form-group">
+                    <div> Minimum row value
+                        <input type="text" class="form-control" id="hr1" onkeyup="validateForm('hr1','hre1')" value="0" required />
+                        <p id="hre1" class = "red-text">Error: Please enter a value between -50 to 50</p>
+
+                        <br>
+                    </div>
+
+                    <div> Maximumrow value
+                        <input type="text" class="form-control" id="hr2" onkeyup="validateForm('hr2','hre2')" value="0" required />
+                        <p id="hre2" class = "red-text">Error: Please enter a value between -50 to 50</p>
+
+                        <br>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>Minimum column value
+                        <input type="text" class="form-control" id="vr1" onkeyup="validateForm('vr1','vre1')"value="0" required />
+                        <p id="vre1" class = "red-text">Error: Please enter a value between -50 to 50</p>
+
+
+                    </div><br>
+                        <div> Maximum column value
+                            <input type="text" class="form-control" id="vr2" onkeyup="validateForm('vr2','vre2')" value="0" required />
+                            <p id="vre2" class = "red-text">Error: Please enter a value between -50 to 50</p>
+
+
+                        </div> <br>
+                        </div>
+                <button id="submit" class="btn btn-default" type="submit" onclick="checkValidation(); return false">Save Table</button>
+                <p id="submitValidation" class="red mt-2"></p>
+
+            </form>
+            <!-- form ends -->
+
+
+            </div>
+
+            <!-- generated table -->
+             <div id="tableRepeat" class="mt-5 main-table">
+                 <h6 id="tooMany" class="mt-3"></h6>
+                 <table id="row" class="table col-6">
+                     <tr id="topRow" class="tr1">
+                     </tr>
+                 </table>
+             </div>
+
+      <!-- Javascript -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" ></script>
+      <script src="js/main.js">
+      </script>
+
+  </body>
+</html>
